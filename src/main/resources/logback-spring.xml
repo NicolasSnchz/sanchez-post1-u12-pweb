@@ -1,4 +1,6 @@
-<!-- Logback: consola (formato corto) y archivo logs/pedidos.log con rotacion diaria y 30 dias de historial -->
+<!-- Logback: consola siempre; el archivo logs/pedidos.log (rotacion diaria, 30 dias) solo en dev.
+     En un contenedor de produccion los logs salen por la salida estandar y los recoge la plataforma.
+     Los niveles los fija cada perfil con logging.level.* -->
 <configuration>
   <appender name="CONSOLA" class="ch.qos.logback.core.ConsoleAppender">
     <encoder>
@@ -6,24 +8,25 @@
     </encoder>
   </appender>
 
-  <appender name="ARCHIVO"
-            class="ch.qos.logback.core.rolling.RollingFileAppender">
-    <file>logs/pedidos.log</file>
-    <rollingPolicy
-        class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-      <fileNamePattern>logs/pedidos.%d{yyyy-MM-dd}.log</fileNamePattern>
-      <maxHistory>30</maxHistory>
-    </rollingPolicy>
-    <encoder>
-      <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger - %msg%n</pattern>
-    </encoder>
-  </appender>
-
-  <!-- DEBUG solo para el codigo del proyecto; Spring y Hibernate quedan en INFO -->
-  <logger name="com.tienda.pedidos" level="DEBUG"/>
+  <springProfile name="dev">
+    <appender name="ARCHIVO"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+      <file>logs/pedidos.log</file>
+      <rollingPolicy
+          class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <fileNamePattern>logs/pedidos.%d{yyyy-MM-dd}.log</fileNamePattern>
+        <maxHistory>30</maxHistory>
+      </rollingPolicy>
+      <encoder>
+        <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger - %msg%n</pattern>
+      </encoder>
+    </appender>
+  </springProfile>
 
   <root level="INFO">
     <appender-ref ref="CONSOLA"/>
-    <appender-ref ref="ARCHIVO"/>
+    <springProfile name="dev">
+      <appender-ref ref="ARCHIVO"/>
+    </springProfile>
   </root>
 </configuration>
