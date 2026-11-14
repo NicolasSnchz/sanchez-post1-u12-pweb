@@ -27,6 +27,11 @@ COPY --from=builder /app/target/*.jar app.jar
 
 EXPOSE 8080
 
+# El contenedor se reporta como unhealthy si /actuator/health deja de responder UP. Usa PORT, la
+# misma variable que server.port, porque Render la fija (por defecto 10000)
+HEALTHCHECK --interval=30s --timeout=5s --start-period=60s --retries=3 \
+  CMD wget -qO- "http://localhost:${PORT:-8080}/actuator/health" | grep -q '"status":"UP"' || exit 1
+
 # MaxRAMPercentage: el heap usa la mitad de la memoria del contenedor (el plan gratuito de Render da
 # 512 MB); sin el, la JVM se limita al 25 %
 ENTRYPOINT ["java", "-XX:MaxRAMPercentage=50", "-jar", "app.jar"]

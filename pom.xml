@@ -35,6 +35,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
+        <!-- Monitoreo: /actuator/health lo consultan el smoke test del pipeline y el HEALTHCHECK -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
 
         <!-- Documentacion OpenAPI y Swagger UI (version de la guia, compatible con Spring Boot 3.2) -->
         <dependency>
