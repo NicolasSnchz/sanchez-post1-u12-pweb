@@ -1,0 +1,39 @@
+# Blueprint de Render (Infrastructure as Code): en el panel, New > Blueprint > este repositorio crea la
+# base PostgreSQL gratuita y el servicio web con el mismo Dockerfile, ya conectados entre si.
+databases:
+  - name: pedidos-db
+    plan: free
+    databaseName: appdb
+    user: appuser
+
+services:
+  - type: web
+    name: pedidos-api
+    runtime: docker              # Render construye la imagen con el Dockerfile de la raiz
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      # Render entrega host, puerto y base por separado; application-prod.properties arma la URL JDBC
+      - key: DATASOURCE_HOST
+        fromDatabase:
+          name: pedidos-db
+          property: host
+      - key: DATASOURCE_PORT
+        fromDatabase:
+          name: pedidos-db
+          property: port
+      - key: DATASOURCE_DB
+        fromDatabase:
+          name: pedidos-db
+          property: database
+      - key: DATASOURCE_USER
+        fromDatabase:
+          name: pedidos-db
+          property: user
+      - key: DATASOURCE_PASSWORD
+        fromDatabase:
+          name: pedidos-db
+          property: password
