@@ -1,0 +1,13 @@
+# Solo pom.xml y src/ entran a la imagen: lo demas no se necesita para compilar ni para ejecutar
+target/
+logs/
+.git/
+.github/
+.idea/
+.vscode/
+*.iml
+.mvn/
+mvnw
+mvnw.cmd
+*.md
+capturas/
