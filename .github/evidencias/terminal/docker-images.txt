@@ -1,0 +1,10 @@
+# Checkpoint 2 (Parte 1): la imagen se construye con el Dockerfile multi-stage (etapa builder y etapa de ejecucion)
+docker build --progress=plain -t mi-spring-app:local . 2>&1 | grep -E '^#[0-9]+ \[(builder|stage-1) +[0-9]+/[0-9]+\]|naming to'
+docker images mi-spring-app:local
+
+# La imagen final: usuario no root, puerto, HEALTHCHECK contra /actuator/health y ENTRYPOINT con java -jar
+docker image inspect mi-spring-app:local --format 'Usuario: {{.Config.User}}   Puerto: {{json .Config.ExposedPorts}}   ENTRYPOINT: {{json .Config.Entrypoint}}'
+docker image inspect mi-spring-app:local --format 'HEALTHCHECK: {{json .Config.Healthcheck.Test}}'
+
+# Solo la etapa de ejecucion queda en la imagen: un JRE, sin Maven ni compilador
+docker run --rm --entrypoint sh mi-spring-app:local -c 'whoami; which mvn javac || echo "sin mvn ni javac"; java -version 2>&1 | head -1'

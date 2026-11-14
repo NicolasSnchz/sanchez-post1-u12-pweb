@@ -1,0 +1,2 @@
+# Las pruebas que corre el job build-and-test de ci.yml (JDK 21), con el Maven Wrapper
+./mvnw -B -ntp clean verify | grep -E 'Tests run:|BUILD|Total time'

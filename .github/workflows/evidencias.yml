@@ -1,0 +1,68 @@
+# Flujo TEMPORAL de evidencias (se retira al cerrar el laboratorio). Mientras el repositorio no tenga
+# capturas: construye la imagen, la corre con el perfil dev (H2) y con el perfil prod contra un
+# PostgreSQL real, toma las capturas en terminales reales y, si todo dio lo esperado, las agrega al
+# repositorio y vuelve a disparar ci.yml sobre ese commit
+name: Evidencias
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  evidencias:
+    runs-on: ubuntu-24.04
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: appdb
+          POSTGRES_USER: appuser
+          POSTGRES_PASSWORD: apppass
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd="pg_isready -U appuser -d appdb"
+          --health-interval=5s --health-timeout=5s --health-retries=20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Revisar si ya hay capturas
+        id: estado
+        run: |
+          if [ -f capturas/docker-images.png ]; then echo "hacer=no" >> "$GITHUB_OUTPUT"; else echo "hacer=si" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/setup-java@v4
+        if: steps.estado.outputs.hacer == 'si'
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+      - name: Herramientas
+        if: steps.estado.outputs.hacer == 'si'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq xterm xvfb x11-utils imagemagick jq > /dev/null
+      - name: Medir y capturar
+        if: steps.estado.outputs.hacer == 'si'
+        run: bash .github/evidencias/generar.sh
+      - name: Agregar las capturas y volver a correr ci.yml sobre ese commit
+        if: steps.estado.outputs.hacer == 'si'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add capturas
+          git -c user.name="Nicolas Sanchez" -c user.email="nicosanchezvil@gmail.com" \
+            commit -qm "docs: capturas de la imagen Docker, los perfiles dev y prod y las pruebas"
+          git push origin HEAD:main
+          gh workflow run ci.yml --ref main
+      - name: Publicar los registros si algo fallo
+        if: failure() && steps.estado.outputs.hacer == 'si'
+        run: |
+          cd evid
+          git init -q -b evidencias
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -qm "Registros de ${GITHUB_SHA::7}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" evidencias
