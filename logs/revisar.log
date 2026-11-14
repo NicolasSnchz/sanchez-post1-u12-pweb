@@ -1,0 +1,25 @@
+{
+  "tamano": 266084856,
+  "usuario": "spring",
+  "entrypoint": "[\"java\",\"-XX:MaxRAMPercentage=50\",\"-jar\",\"app.jar\"]",
+  "sin_mvn": "si",
+  "dev": {
+    "health": "{\"status\":\"UP\",\"components\":{\"db\":{\"status\":\"UP\",\"details\":{\"database\":\"H2\",\"validationQuery\":\"isValid()\"}},\"diskSpace\":{\"status\":\"UP\",\"details\":{\"total\":154894188544,\"free\":93391032320,\"threshold\":10485760,\"path\":\"/app/.\",\"exists\":true}},\"ping\":{\"status\":\"UP\"}}}",
+    "post": "201",
+    "beans": "200",
+    "log": "The following 1 profile is active: \"dev\""
+  },
+  "prod": {
+    "health": "{\"status\":\"UP\"}",
+    "info": "{\"app\":{\"nombre\":\"pedidos\",\"version\":\"0.0.1-SNAPSHOT\"}}",
+    "beans": "404",
+    "env": "404",
+    "post": "{\"id\":2,\"clienteEmail\":\"a@b.co\",\"tipoCliente\":\"MAYORISTA\",\"subtotal\":100000.0,\"descuento\":25000.0,\"iva\":14250.0,\"total\":89250.0,\"estado\":\"CREADO\"}",
+    "filas": "2",
+    "log": "",
+    "healthy": "si"
+  }
+}
+
+NO se agregan las capturas:
+ - prod: 

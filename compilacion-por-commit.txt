@@ -1,0 +1,8 @@
+7c70156 feat: proyecto Spring Boot de pedidos de la Unidad 11 como base del laboratorio (parte 1) -> exit 0
+28901db feat: externalizar configuracion con placeholders y separar perfiles dev/prod (parte 1) -> exit 0
+0f794ea feat: Dockerfile multi-stage y .dockerignore (parte 1) -> exit 0
+ad7859e docs: instrucciones de build local, ejecucion con Docker y decisiones de diseno (parte 1) -> exit 0
+7ea4ea4 feat: agregar Spring Boot Actuator con exposicion diferenciada por perfil (parte 2) -> exit 0
+ca06fd2 test: agregar prueba minima de contexto para el pipeline (parte 2) -> exit 0
+c0de6ea ci: agregar pipeline GitHub Actions con build, test y smoke test de Docker (parte 2) -> exit 0
+197effb ci: flujo temporal de evidencias con Docker, PostgreSQL y capturas en terminales reales -> exit 0

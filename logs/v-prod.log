@@ -1,0 +1,38 @@
+02:04:56,305 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.14
+02:04:56,308 |-INFO in ch.qos.logback.classic.util.ContextInitializer@142269f2 - Here is a list of configurators discovered as a service, by rank: 
+02:04:56,308 |-INFO in ch.qos.logback.classic.util.ContextInitializer@142269f2 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+02:04:56,308 |-INFO in ch.qos.logback.classic.util.ContextInitializer@142269f2 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+02:04:56,308 |-INFO in ch.qos.logback.classic.util.ContextInitializer@142269f2 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+02:04:56,314 |-INFO in ch.qos.logback.classic.util.ContextInitializer@142269f2 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+02:04:56,314 |-INFO in ch.qos.logback.classic.util.ContextInitializer@142269f2 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+02:04:56,315 |-INFO in ch.qos.logback.classic.util.ContextInitializer@142269f2 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+02:04:56,316 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+02:04:56,316 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+02:04:56,316 |-INFO in ch.qos.logback.classic.util.ContextInitializer@142269f2 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+02:04:56,316 |-INFO in ch.qos.logback.classic.util.ContextInitializer@142269f2 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+02:04:56,317 |-INFO in ch.qos.logback.classic.util.ContextInitializer@142269f2 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+02:04:56,317 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+02:04:56,318 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+02:04:56,318 |-INFO in ch.qos.logback.classic.util.ContextInitializer@142269f2 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+02:04:56,318 |-INFO in ch.qos.logback.classic.util.ContextInitializer@142269f2 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+02:04:56,319 |-INFO in ch.qos.logback.classic.util.ContextInitializer@142269f2 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+02:04:56,319 |-INFO in ch.qos.logback.classic.BasicConfigurator@331acdad - Setting up default configuration.
+02:04:56,330 |-INFO in ch.qos.logback.classic.util.ContextInitializer@142269f2 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 11 milliseconds. ExecutionStatus=NEUTRAL
+02:04:56,670 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@41d426b5 - URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/logback-spring.xml] is not of type file
+02:04:56,701 |-WARN in org.springframework.boot.logging.logback.SpringProfileIfNestedWithinSecondPhaseElementSanityChecker@8dbfffb - <springProfile> elements cannot be nested within an <appender>, <logger> or <root> element
+02:04:56,701 |-WARN in org.springframework.boot.logging.logback.SpringProfileIfNestedWithinSecondPhaseElementSanityChecker@8dbfffb - Element <root> at line 26 contains a nested <springProfile> element at line 28
+02:04:56,723 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLA]
+02:04:56,723 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+02:04:56,726 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+02:04:56,735 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@f316aeb - End of configuration.
+02:04:56,735 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@6aa3a905 - Registering current configuration as safe fallback point
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v3.2.12)
+

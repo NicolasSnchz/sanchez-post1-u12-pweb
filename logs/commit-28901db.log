@@ -1,0 +1,364 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.tienda:pedidos >-------------------------
+[INFO] Building pedidos 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ pedidos ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ pedidos ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 17 source files with javac [debug parameters release 17] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ pedidos ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.xs5dnXm5a0/c/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ pedidos ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 4 source files with javac [debug parameters release 17] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ pedidos ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.tienda.pedidos.controller.PedidoControllerTest
+02:02:31.085 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.tienda.pedidos.controller.PedidoControllerTest]: PedidoControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+02:02:31.189 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.tienda.pedidos.PedidosApplication for test class com.tienda.pedidos.controller.PedidoControllerTest
+02:02:31,008 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.14
+02:02:31,009 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6482eef - Here is a list of configurators discovered as a service, by rank: 
+02:02:31,009 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6482eef -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+02:02:31,009 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6482eef - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+02:02:31,009 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6482eef - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+02:02:31,014 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6482eef - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+02:02:31,014 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6482eef - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+02:02:31,014 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6482eef - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+02:02:31,015 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+02:02:31,016 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+02:02:31,016 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6482eef - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 2 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+02:02:31,016 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6482eef - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+02:02:31,016 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6482eef - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+02:02:31,016 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+02:02:31,016 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+02:02:31,016 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6482eef - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+02:02:31,016 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6482eef - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+02:02:31,017 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6482eef - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+02:02:31,017 |-INFO in ch.qos.logback.classic.BasicConfigurator@1fcf9739 - Setting up default configuration.
+02:02:31,033 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6482eef - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 16 milliseconds. ExecutionStatus=NEUTRAL
+02:02:31,399 |-WARN in org.springframework.boot.logging.logback.SpringProfileIfNestedWithinSecondPhaseElementSanityChecker@5b498842 - <springProfile> elements cannot be nested within an <appender>, <logger> or <root> element
+02:02:31,399 |-WARN in org.springframework.boot.logging.logback.SpringProfileIfNestedWithinSecondPhaseElementSanityChecker@5b498842 - Element <root> at line 26 contains a nested <springProfile> element at line 28
+02:02:31,412 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLA]
+02:02:31,412 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+02:02:31,414 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+02:02:31,422 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ARCHIVO]
+02:02:31,422 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+02:02:31,427 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@481525476 - No compression will be used
+02:02:31,428 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@481525476 - Will use the pattern logs/pedidos.%d{yyyy-MM-dd}.log for the active file
+02:02:31,446 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/pedidos.%d{yyyy-MM-dd}.log'.
+02:02:31,446 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+02:02:31,455 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2026-11-14T02:02:31.454Z
+02:02:31,455 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+02:02:31,458 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ARCHIVO] - Active log file name: logs/pedidos.log
+02:02:31,458 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ARCHIVO] - File property is set to [logs/pedidos.log]
+02:02:31,458 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+02:02:31,459 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5bcb04cb - Propagating INFO level on Logger[ROOT] onto the JUL framework
+02:02:31,459 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLA] to Logger[ROOT]
+02:02:31,459 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ARCHIVO] to Logger[ROOT]
+02:02:31,459 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@385e36d4 - End of configuration.
+02:02:31,459 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@2fc2a205 - Registering current configuration as safe fallback point
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v3.2.12)
+
+02:02:31 INFO  o.h.v.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+02:02:31 INFO  c.t.p.c.PedidoControllerTest - Starting PedidoControllerTest using Java 21.0.13 with PID 4344 (started by runner in /tmp/tmp.xs5dnXm5a0/c)
+02:02:31 DEBUG c.t.p.c.PedidoControllerTest - Running with Spring Boot v3.2.12, Spring v6.1.15
+02:02:31 INFO  c.t.p.c.PedidoControllerTest - The following 1 profile is active: "dev"
+02:02:32 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+02:02:32 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+02:02:32 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+02:02:32 INFO  c.t.p.c.PedidoControllerTest - Started PedidoControllerTest in 1.7 seconds (process running for 2.344)
+02:02:33 ERROR c.t.p.e.GlobalExceptionHandler - Error inesperado en GET /api/pedidos/1
+java.lang.IllegalStateException: detalle interno de la base
+	at com.tienda.pedidos.controller.PedidoController.obtener(PedidoController.java:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at com.tienda.pedidos.controller.PedidoControllerTest.get_errorInesperado_retorna500SinFiltrarElDetalleInterno(PedidoControllerTest.java:103)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.266 s -- in com.tienda.pedidos.controller.PedidoControllerTest
+[INFO] Running com.tienda.pedidos.service.PedidoServiceImplTest
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Creando pedido: clienteEmail=ana@correo.com, tipoCliente=VIP
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Descuento aplicado: pedido para clienteEmail=ana@correo.com, tipoCliente=VIP, descuento=15000.0
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Pedido creado exitosamente con id=4, total=101150.0
+02:02:33 DEBUG c.t.p.s.PedidoServiceImpl - Buscando pedido con id=999
+02:02:33 WARN  c.t.p.s.PedidoServiceImpl - Pedido con id=999 no encontrado
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Creando pedido: clienteEmail=ana@correo.com, tipoCliente=VIP
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Descuento aplicado: pedido para clienteEmail=ana@correo.com, tipoCliente=VIP, descuento=15000.0
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Pedido creado exitosamente con id=1, total=101150.0
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Creando pedido: clienteEmail=ana@correo.com, tipoCliente=MAYORISTA
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Descuento aplicado: pedido para clienteEmail=ana@correo.com, tipoCliente=MAYORISTA, descuento=25000.0
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Pedido creado exitosamente con id=1, total=89250.0
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Creando pedido: clienteEmail=ana@correo.com, tipoCliente=REGULAR
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Descuento aplicado: pedido para clienteEmail=ana@correo.com, tipoCliente=REGULAR, descuento=0.0
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Pedido creado exitosamente con id=1, total=119000.0
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Creando pedido: clienteEmail=ana@correo.com, tipoCliente=vip
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Descuento aplicado: pedido para clienteEmail=ana@correo.com, tipoCliente=vip, descuento=15000.0
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Pedido creado exitosamente con id=1, total=101150.0
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Creando pedido: clienteEmail=ana@correo.com, tipoCliente=VIP
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Descuento aplicado: pedido para clienteEmail=ana@correo.com, tipoCliente=VIP, descuento=18518.517
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Pedido creado exitosamente con id=3, total=124876.53
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Creando pedido: clienteEmail=ana@correo.com, tipoCliente=VIP
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Descuento aplicado: pedido para clienteEmail=ana@correo.com, tipoCliente=VIP, descuento=15000.0
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Pedido creado exitosamente con id=5, total=101150.0
+02:02:33 ERROR c.t.p.s.PedidoServiceImpl - No se pudo enviar la confirmacion del pedido id=5 a clienteEmail=ana@correo.com
+java.lang.IllegalStateException: servidor de correo caido
+	at com.tienda.pedidos.service.PedidoServiceImpl.guardar(PedidoServiceImpl.java:96)
+	at com.tienda.pedidos.service.PedidoServiceImpl.crear(PedidoServiceImpl.java:55)
+	at com.tienda.pedidos.service.PedidoServiceImplTest.crear_siFallaLaNotificacion_igualDevuelveElPedidoGuardado(PedidoServiceImplTest.java:110)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Creando pedido: clienteEmail=ana@correo.com, tipoCliente=PLATINO
+02:02:33 WARN  c.t.p.s.PedidoServiceImpl - tipoCliente=PLATINO no tiene estrategia de descuento; se aplica REGULAR (clienteEmail=ana@correo.com)
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Descuento aplicado: pedido para clienteEmail=ana@correo.com, tipoCliente=PLATINO, descuento=0.0
+02:02:33 INFO  c.t.p.s.PedidoServiceImpl - Pedido creado exitosamente con id=2, total=119000.0
+02:02:33 DEBUG c.t.p.s.PedidoServiceImpl - Listando pedidos de clienteEmail=ana@correo.com: 1 encontrados
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.248 s -- in com.tienda.pedidos.service.PedidoServiceImplTest
+[INFO] Running com.tienda.pedidos.PedidosIntegracionTest
+02:02:33 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.tienda.pedidos.PedidosIntegracionTest]: PedidosIntegracionTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+02:02:33 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.tienda.pedidos.PedidosApplication for test class com.tienda.pedidos.PedidosIntegracionTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v3.2.12)
+
+02:02:33 INFO  c.t.p.PedidosIntegracionTest - Starting PedidosIntegracionTest using Java 21.0.13 with PID 4344 (started by runner in /tmp/tmp.xs5dnXm5a0/c)
+02:02:33 DEBUG c.t.p.PedidosIntegracionTest - Running with Spring Boot v3.2.12, Spring v6.1.15
+02:02:33 INFO  c.t.p.PedidosIntegracionTest - The following 1 profile is active: "dev"
+02:02:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02:02:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interface.
+02:02:33 INFO  o.h.j.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+02:02:34 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.10.Final
+02:02:34 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+02:02:34 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+02:02:34 INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+02:02:34 INFO  c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:devdb user=SA
+02:02:34 INFO  c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+02:02:34 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists pedido cascade 
+Hibernate: create table pedido (descuento float(53), iva float(53), subtotal float(53), total float(53), fecha_creacion timestamp(6), id bigint generated by default as identity, cliente_email varchar(255), estado varchar(255), notas_internas varchar(255), tipo_cliente varchar(255), primary key (id))
+02:02:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02:02:35 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:devdb'
+02:02:35 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+02:02:35 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+02:02:35 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+02:02:35 INFO  c.t.p.PedidosIntegracionTest - Started PedidosIntegracionTest in 1.519 seconds (process running for 4.463)
+02:02:35 INFO  c.t.p.s.PedidoServiceImpl - Creando pedido: clienteEmail=ana@correo.com, tipoCliente=VIP
+02:02:35 INFO  c.t.p.s.PedidoServiceImpl - Descuento aplicado: pedido para clienteEmail=ana@correo.com, tipoCliente=VIP, descuento=15000.0
+Hibernate: insert into pedido (cliente_email,descuento,estado,fecha_creacion,iva,notas_internas,subtotal,tipo_cliente,total,id) values (?,?,?,?,?,?,?,?,?,default)
+02:02:35 INFO  c.t.p.s.PedidoServiceImpl - Pedido creado exitosamente con id=1, total=101150.0
+02:02:35 INFO  c.t.p.s.NotificacionEmailServiceImpl - Correo de confirmacion enviado a clienteEmail=ana@correo.com, total=101150.0
+02:02:35 DEBUG c.t.p.s.PedidoServiceImpl - Buscando pedido con id=1
+Hibernate: select p1_0.id,p1_0.cliente_email,p1_0.descuento,p1_0.estado,p1_0.fecha_creacion,p1_0.iva,p1_0.notas_internas,p1_0.subtotal,p1_0.tipo_cliente,p1_0.total from pedido p1_0 where p1_0.id=?
+Hibernate: select p1_0.id,p1_0.cliente_email,p1_0.descuento,p1_0.estado,p1_0.fecha_creacion,p1_0.iva,p1_0.notas_internas,p1_0.subtotal,p1_0.tipo_cliente,p1_0.total from pedido p1_0 where p1_0.id=?
+02:02:35 DEBUG c.t.p.s.PedidoServiceImpl - Buscando pedido con id=999999
+Hibernate: select p1_0.id,p1_0.cliente_email,p1_0.descuento,p1_0.estado,p1_0.fecha_creacion,p1_0.iva,p1_0.notas_internas,p1_0.subtotal,p1_0.tipo_cliente,p1_0.total from pedido p1_0 where p1_0.id=?
+02:02:35 WARN  c.t.p.s.PedidoServiceImpl - Pedido con id=999999 no encontrado
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.677 s -- in com.tienda.pedidos.PedidosIntegracionTest
+[INFO] Running com.tienda.pedidos.strategy.EstrategiaDescuentoTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in com.tienda.pedidos.strategy.EstrategiaDescuentoTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ pedidos ---
+[INFO] Building jar: /tmp/tmp.xs5dnXm5a0/c/target/pedidos-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.2.12:repackage (repackage) @ pedidos ---
+[INFO] Replacing main artifact /tmp/tmp.xs5dnXm5a0/c/target/pedidos-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /tmp/tmp.xs5dnXm5a0/c/target/pedidos-0.0.1-SNAPSHOT.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.417 s
+[INFO] Finished at: 2026-11-14T02:02:35Z
+[INFO] ------------------------------------------------------------------------

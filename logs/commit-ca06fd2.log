@@ -1,0 +1,132 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.tienda:pedidos >-------------------------
+[INFO] Building pedidos 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ pedidos ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ pedidos ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 17 source files with javac [debug parameters release 17] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ pedidos ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.xs5dnXm5a0/c/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ pedidos ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 6 source files with javac [debug parameters release 17] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ pedidos ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.tienda.pedidos.PerfilProdTest
+02:03:06.170 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.tienda.pedidos.PerfilProdTest]: PerfilProdTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+02:03:06.246 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.tienda.pedidos.PedidosApplication for test class com.tienda.pedidos.PerfilProdTest
+02:03:06,088 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.14
+02:03:06,089 |-INFO in ch.qos.logback.classic.util.ContextInitializer@ae372b9 - Here is a list of configurators discovered as a service, by rank: 
+02:03:06,089 |-INFO in ch.qos.logback.classic.util.ContextInitializer@ae372b9 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+02:03:06,089 |-INFO in ch.qos.logback.classic.util.ContextInitializer@ae372b9 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+02:03:06,089 |-INFO in ch.qos.logback.classic.util.ContextInitializer@ae372b9 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+02:03:06,095 |-INFO in ch.qos.logback.classic.util.ContextInitializer@ae372b9 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+02:03:06,095 |-INFO in ch.qos.logback.classic.util.ContextInitializer@ae372b9 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+02:03:06,095 |-INFO in ch.qos.logback.classic.util.ContextInitializer@ae372b9 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+02:03:06,097 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+02:03:06,097 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+02:03:06,097 |-INFO in ch.qos.logback.classic.util.ContextInitializer@ae372b9 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 2 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+02:03:06,097 |-INFO in ch.qos.logback.classic.util.ContextInitializer@ae372b9 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+02:03:06,097 |-INFO in ch.qos.logback.classic.util.ContextInitializer@ae372b9 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+02:03:06,097 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+02:03:06,097 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+02:03:06,097 |-INFO in ch.qos.logback.classic.util.ContextInitializer@ae372b9 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+02:03:06,097 |-INFO in ch.qos.logback.classic.util.ContextInitializer@ae372b9 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+02:03:06,098 |-INFO in ch.qos.logback.classic.util.ContextInitializer@ae372b9 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+02:03:06,098 |-INFO in ch.qos.logback.classic.BasicConfigurator@2098d37d - Setting up default configuration.
+02:03:06,113 |-INFO in ch.qos.logback.classic.util.ContextInitializer@ae372b9 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 15 milliseconds. ExecutionStatus=NEUTRAL
+02:03:06,514 |-WARN in org.springframework.boot.logging.logback.SpringProfileIfNestedWithinSecondPhaseElementSanityChecker@77b9d0c7 - <springProfile> elements cannot be nested within an <appender>, <logger> or <root> element
+02:03:06,514 |-WARN in org.springframework.boot.logging.logback.SpringProfileIfNestedWithinSecondPhaseElementSanityChecker@77b9d0c7 - Element <root> at line 26 contains a nested <springProfile> element at line 28
+02:03:06,535 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLA]
+02:03:06,535 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+02:03:06,538 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+02:03:06,549 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@65fd6708 - End of configuration.
+02:03:06,550 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@749ab7b4 - Registering current configuration as safe fallback point
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v3.2.12)
+
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.762 s -- in com.tienda.pedidos.PerfilProdTest
+[INFO] Running com.tienda.pedidos.ApplicationContextTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v3.2.12)
+
+Hibernate: drop table if exists pedido cascade 
+Hibernate: create table pedido (descuento float(53), iva float(53), subtotal float(53), total float(53), fecha_creacion timestamp(6), id bigint generated by default as identity, cliente_email varchar(255), estado varchar(255), notas_internas varchar(255), tipo_cliente varchar(255), primary key (id))
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.825 s -- in com.tienda.pedidos.ApplicationContextTest
+[INFO] Running com.tienda.pedidos.controller.PedidoControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v3.2.12)
+
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.473 s -- in com.tienda.pedidos.controller.PedidoControllerTest
+[INFO] Running com.tienda.pedidos.service.PedidoServiceImplTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.272 s -- in com.tienda.pedidos.service.PedidoServiceImplTest
+[INFO] Running com.tienda.pedidos.PedidosIntegracionTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v3.2.12)
+
+Hibernate: drop table if exists pedido cascade 
+Hibernate: create table pedido (descuento float(53), iva float(53), subtotal float(53), total float(53), fecha_creacion timestamp(6), id bigint generated by default as identity, cliente_email varchar(255), estado varchar(255), notas_internas varchar(255), tipo_cliente varchar(255), primary key (id))
+Hibernate: insert into pedido (cliente_email,descuento,estado,fecha_creacion,iva,notas_internas,subtotal,tipo_cliente,total,id) values (?,?,?,?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.cliente_email,p1_0.descuento,p1_0.estado,p1_0.fecha_creacion,p1_0.iva,p1_0.notas_internas,p1_0.subtotal,p1_0.tipo_cliente,p1_0.total from pedido p1_0 where p1_0.id=?
+Hibernate: select p1_0.id,p1_0.cliente_email,p1_0.descuento,p1_0.estado,p1_0.fecha_creacion,p1_0.iva,p1_0.notas_internas,p1_0.subtotal,p1_0.tipo_cliente,p1_0.total from pedido p1_0 where p1_0.id=?
+Hibernate: select p1_0.id,p1_0.cliente_email,p1_0.descuento,p1_0.estado,p1_0.fecha_creacion,p1_0.iva,p1_0.notas_internas,p1_0.subtotal,p1_0.tipo_cliente,p1_0.total from pedido p1_0 where p1_0.id=?
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.288 s -- in com.tienda.pedidos.PedidosIntegracionTest
+[INFO] Running com.tienda.pedidos.strategy.EstrategiaDescuentoTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in com.tienda.pedidos.strategy.EstrategiaDescuentoTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ pedidos ---
+[INFO] Building jar: /tmp/tmp.xs5dnXm5a0/c/target/pedidos-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.2.12:repackage (repackage) @ pedidos ---
+[INFO] Replacing main artifact /tmp/tmp.xs5dnXm5a0/c/target/pedidos-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /tmp/tmp.xs5dnXm5a0/c/target/pedidos-0.0.1-SNAPSHOT.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10.475 s
+[INFO] Finished at: 2026-11-14T02:03:14Z
+[INFO] ------------------------------------------------------------------------
